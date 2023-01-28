@@ -29,8 +29,6 @@ public class Order implements Serializable {
 	
 	private Integer orderStatus;
 
-	
-	
 	@ManyToOne
 	@JoinColumn(name = "client_id")
 	private User client;
@@ -96,8 +94,4 @@ public class Order implements Serializable {
 		Order other = (Order) obj;
 		return Objects.equals(id, other.id);
 	}
-	
-	
-	
-	
 }
